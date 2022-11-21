@@ -6,6 +6,7 @@ var greetFunc = function(name) {
 console.log(greetFunc);
 
 // function expression, thanks () it does not throw an error
+var firstname = 'Tom';
 (function(name) {
-    return 'Hallo ' + name;
-})
+    console.log('Hallo ' + name);
+}(firstname))
