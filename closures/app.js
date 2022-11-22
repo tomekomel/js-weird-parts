@@ -46,3 +46,13 @@ var fs2 = buildFunctions2();
 fs2[0]();
 fs2[1]();
 fs2[2]();
+
+function sayHiLater() {
+    var greeting = 'Hi';
+
+    setTimeout(function () {
+        console.log(greeting);
+    }, 3000);
+}
+
+sayHiLater();
