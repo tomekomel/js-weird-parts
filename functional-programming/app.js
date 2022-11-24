@@ -30,3 +30,14 @@ var checkPastLimit = function(limiter, item) {
 // we need to preset one parameter
 var arr4 = mapEachElement(arr, checkPastLimit.bind(this, 1));
 console.log(arr4);
+
+// limiter parameters are two different parameters here
+var checkPastLimitSimplified = function (limiter) {
+    return function (limiter, item) {
+        return item > limiter;
+    }.bind(limiter);
+}
+
+// we need to preset one parameter
+var arr5 = mapEachElement(arr, checkPastLimit.bind(this, 2));
+console.log(arr5);
