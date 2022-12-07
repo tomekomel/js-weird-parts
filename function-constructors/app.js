@@ -21,3 +21,16 @@ String.prototype.isLengthGreaterThenLimit = function (limit) {
 }
 
 console.log("John".isLengthGreaterThenLimit(3));
+
+Number.prototype.isPositive = function () {
+    return this > 0;
+}
+
+console.log(new Number(5).isPositive());
+
+// this creates an object
+var c = new Number(3);
+// this creates a primitive
+var d = Number(3);
+
+console.log(c, d);
