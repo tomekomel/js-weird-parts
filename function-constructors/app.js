@@ -15,3 +15,9 @@ console.log(john);
 var jim = new Person('Jim', 'Carter');
 console.log(jim);
 console.log(jim.getFormalFullName());
+
+String.prototype.isLengthGreaterThenLimit = function (limit) {
+    return this.length > limit;
+}
+
+console.log("John".isLengthGreaterThenLimit(3));
