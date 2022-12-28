@@ -1,2 +1,2 @@
 var g = $G('Tomasz', 'Doe');
-console.log(g);
+g.greet().setLang('es').greet(true);
