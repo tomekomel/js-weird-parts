@@ -1,2 +1,7 @@
 var g = $G('Tomasz', 'Doe');
-g.greet().setLang('es').greet(true);
+
+$('#login').click(function () {
+    var loginGrtr = $G('Tomasz', 'Doe');
+    $('#logindiv').hide();
+    loginGrtr.setLang($('#lang').val()).HTMLGreeting('#greeting', true).log();
+});
