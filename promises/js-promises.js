@@ -21,3 +21,16 @@ someText.then((val) => {
 }).then((value) => {
     console.log(value);
 });
+
+async function doAllTheWork() {
+    const someText = new Promise(doWork);
+    const text1 = await someText;
+    console.log(text1);
+
+    const otherText = new Promise(doOtherWork);
+    const text2 = await otherText;
+    console.log(text2);
+}
+
+doAllTheWork();
+console.log("Done!");
